@@ -1,5 +1,28 @@
 # better-auth
 
+## 1.6.26
+
+### Patch Changes
+
+- [#10513](https://github.com/better-auth/better-auth/pull/10513) [`e2c73fb`](https://github.com/better-auth/better-auth/commit/e2c73fbec87f5e19f6a2b5ac371bc5bba9bd49ff) Thanks [@mrgrauel](https://github.com/mrgrauel)! - Fix `jwtClient()` collapsing `createAuthClient` type inference when combined with other client plugins such as `inferAdditionalFields`. Additional user fields (for example on `updateUser`) are preserved again.
+
+- [#10552](https://github.com/better-auth/better-auth/pull/10552) [`2b4a14f`](https://github.com/better-auth/better-auth/commit/2b4a14f180ed2eeb9692d6933064b001f66ec52c) Thanks [@bytaesu](https://github.com/bytaesu)! - Allow users to retry email OTP password resets after entering an invalid password.
+
+- [#10467](https://github.com/better-auth/better-auth/pull/10467) [`7552a3b`](https://github.com/better-auth/better-auth/commit/7552a3b563fe1ae922fb65db12d005c38a12614d) Thanks [@jlucaso1](https://github.com/jlucaso1)! - Improve `nextCookies` performance in instrumented Next.js applications.
+
+- [#10580](https://github.com/better-auth/better-auth/pull/10580) [`ea38fca`](https://github.com/better-auth/better-auth/commit/ea38fcac7435137604e9b3ba2fe149a1848d0eeb) Thanks [@Emmaccen](https://github.com/Emmaccen)! - Skip invalid secondary-storage session entries without discarding other valid sessions.
+
+- [#10520](https://github.com/better-auth/better-auth/pull/10520) [`a03e4c1`](https://github.com/better-auth/better-auth/commit/a03e4c18677e2dc01a9b47b2a8017b92dbf9ece7) Thanks [@bytaesu](https://github.com/bytaesu)! - Ensure deleting a user also removes their sessions from secondary storage.
+
+- Updated dependencies [[`a30e274`](https://github.com/better-auth/better-auth/commit/a30e274b5daed6057086d76b91d17abfa02196d7)]:
+  - @better-auth/core@1.6.26
+  - @better-auth/drizzle-adapter@1.6.26
+  - @better-auth/kysely-adapter@1.6.26
+  - @better-auth/memory-adapter@1.6.26
+  - @better-auth/mongo-adapter@1.6.26
+  - @better-auth/prisma-adapter@1.6.26
+  - @better-auth/telemetry@1.6.26
+
 ## 1.6.25
 
 ### Patch Changes
